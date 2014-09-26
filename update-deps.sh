@@ -16,7 +16,7 @@ mkdir -p hardware && cd hardware
 update_repo "attiny" "damellis/attiny"
 # The attiny repo contains the stuff in a second attiny subdir
 # TODO: figure out a better way to get the correct attiny subdir
-[ -f attiny85 ] && ln -s attiny/attiny attiny85
+[ -f attiny85 ] || ln -s attiny/attiny attiny85
 
 cd ..
 
